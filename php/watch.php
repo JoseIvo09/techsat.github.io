@@ -92,7 +92,7 @@
                                 IPTV service provider by purchasing the subscription. There are plenty of IPTVs
                                 available for providing the free M3U URL for streaming.</p>
 
-                        <form method="post" action="https://joseivo09.github.io/techsat.github.io/php/watch.php" enctype="multipart/form-data">
+                        <form method="post" action="watch.php" enctype="multipart/form-data">
                             <div class="form-group">
                                 <label id="play">IPTV Playlist URL</label>
                                 <input type="text" name="iptv" id="iptv" class="form-control"
