@@ -66,10 +66,10 @@
 </head>
 <body class="login-main-body">
 <div class="topnav">
-    <a href="https://web.iptvplayers.com/index.php#whatis">What is Web IPTV Player</a>
-    <a href="https://web.iptvplayers.com/index.php#howtowatch">How to Watch</a>
-    <a href="https://web.iptvplayers.com/index.php#geo">GEO Unblock</a>
-    <a class="active" href="https://web.iptvplayers.com/index.php#play">Play M3U URL</a>
+    <a href="https://joseivo09.github.io/techsat.github.io/php/index.php#whatis">What is Web IPTV Player</a>
+    <a href="https://joseivo09.github.io/techsat.github.io/php/index.php#howtowatch">How to Watch</a>
+    <a href="https://joseivo09.github.io/techsat.github.io/php/index.php#geo">GEO Unblock</a>
+    <a class="active" href="https://joseivo09.github.io/techsat.github.io/php/index.php#play">Play M3U URL</a>
 </div>
 <section class="login-main-wrapper">
     <div class="container-fluid pl-0 pr-0">
@@ -91,26 +91,9 @@
                                 IPTV Player can also stream offline content or videos. You can get the M3U URL from any
                                 IPTV service provider by purchasing the subscription. There are plenty of IPTVs
                                 available for providing the free M3U URL for streaming.</p>
-                            <center>
-                                <script async
-                                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5359332093371752"
-                                        crossorigin="anonymous"></script>
-                                <!-- Resp1 -->
-                                <ins class="adsbygoogle"
-                                     style="display:block"
-                                     data-ad-client="ca-pub-5359332093371752"
-                                     data-ad-slot="1622066377"
-                                     data-ad-format="auto"
-                                     data-full-width-responsive="true"></ins>
-                                <script>
-                                    (adsbygoogle = window.adsbygoogle || []).push({});
-                                </script>
-                            </center>
-
-
                         </div>
 
-                        <form method="post" action="https://web.iptvplayers.com/watch.php" enctype="multipart/form-data">
+                        <form method="post" action="watch.php" enctype="multipart/form-data">
                             <div class="form-group">
                                 <label id="play">IPTV Playlist URL</label>
                                 <input type="text" name="iptv" id="iptv" class="form-control"
@@ -144,25 +127,6 @@
                                 can just access the IPTV Player through the Website. This Online IPTV Player is
                                 completely free to stream the content. You can watch as much content in this IPTV Player
                                 without any interruption.</p>
-                                
-                                
-                                                <center>
-                                <script async
-                                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5359332093371752"
-                                        crossorigin="anonymous"></script>
-                                <!-- Resp1 -->
-                                <ins class="adsbygoogle"
-                                     style="display:block"
-                                     data-ad-client="ca-pub-5359332093371752"
-                                     data-ad-slot="1622066377"
-                                     data-ad-format="auto"
-                                     data-full-width-responsive="true"></ins>
-                                <script>
-                                    (adsbygoogle = window.adsbygoogle || []).push({});
-                                </script>
-                            </center>
-                                        
-
                             <h2>What does this Online IPTV Player Provide?</h2>
 
                             <p>This Web IPTV Player offers EPG support, and you can enjoy streaming the content in 4K
