@@ -1,0 +1,61 @@
+#EXTM3U
+#EXTINF:-1 group-title="Canais | Telecine" tvg-logo="https://loopstatic.net/telecineaction.png" tvg-id="TC Action" ,Telecine Action SD
+http://s.apkwuv.xyz:80/demopadexchange/demopad/83630
+#EXTINF:-1 group-title="Canais | Telecine" tvg-logo="https://loopstatic.net/telecineaction.png" tvg-id="TC Action" ,Telecine Action FHD
+http://s.apkwuv.xyz:80/demopadexchange/demopad/83824
+#EXTINF:-1 group-title="Canais | Telecine" tvg-logo="https://loopstatic.net/telecineaction.png" tvg-id="TC Action" ,Telecine Action HD
+http://s.apkwuv.xyz:80/demopadexchange/demopad/83261
+#EXTINF:-1 group-title="Canais | Telecine" tvg-logo="https://loopstatic.net/telecinecult.png" tvg-id="TC Cult" ,Telecine Cult SD
+http://s.apkwuv.xyz:80/demopadexchange/demopad/83631
+#EXTINF:-1 group-title="Canais | Telecine" tvg-logo="https://loopstatic.net/telecinecult.png" tvg-id="TC Cult" ,Telecine Cult FHD
+http://s.apkwuv.xyz:80/demopadexchange/demopad/83828
+#EXTINF:-1 group-title="Canais | Telecine" tvg-logo="https://loopstatic.net/telecinecult.png" tvg-id="TC Cult" ,Telecine Cult HD
+http://s.apkwuv.xyz:80/demopadexchange/demopad/83262
+#EXTINF:-1 group-title="Canais | Telecine" tvg-logo="https://loopstatic.net/telecinefun.png" tvg-id="TC Fun" ,Telecine Fun SD
+http://s.apkwuv.xyz:80/demopadexchange/demopad/83632
+#EXTINF:-1 group-title="Canais | Telecine" tvg-logo="https://loopstatic.net/telecinefun.png" tvg-id="TC Fun" ,Telecine Fun FHD
+http://s.apkwuv.xyz:80/demopadexchange/demopad/83827
+#EXTINF:-1 group-title="Canais | Telecine" tvg-logo="https://loopstatic.net/telecinefun.png" tvg-id="TC Fun" ,Telecine Fun HD
+http://s.apkwuv.xyz:80/demopadexchange/demopad/83263
+#EXTINF:-1 group-title="Canais | Telecine" tvg-logo="https://loopstatic.net/telecinepipoca.png" tvg-id="TC Pipoca" ,Telecine Pipoca SD
+http://s.apkwuv.xyz:80/demopadexchange/demopad/83633
+#EXTINF:-1 group-title="Canais | Telecine" tvg-logo="https://loopstatic.net/telecinepipoca.png" tvg-id="TC Pipoca" ,Telecine Pipoca FHD
+http://s.apkwuv.xyz:80/demopadexchange/demopad/83826
+#EXTINF:-1 group-title="Canais | Telecine" tvg-logo="https://loopstatic.net/telecinepipoca.png" tvg-id="TC Pipoca" ,Telecine Pipoca HD
+http://s.apkwuv.xyz:80/demopadexchange/demopad/83264
+#EXTINF:-1 group-title="Canais | Telecine" tvg-logo="https://loopstatic.net/telecinepremium.png" tvg-id="TC Premium" ,Telecine Premium SD
+http://s.apkwuv.xyz:80/demopadexchange/demopad/83634
+#EXTINF:-1 group-title="Canais | Telecine" tvg-logo="https://loopstatic.net/telecinepremium.png" tvg-id="TC Premium" ,Telecine Premium FHD
+http://s.apkwuv.xyz:80/demopadexchange/demopad/83823
+#EXTINF:-1 group-title="Canais | Telecine" tvg-logo="https://loopstatic.net/telecinepremium.png" tvg-id="TC Premium" ,Telecine Premium HD
+http://s.apkwuv.xyz:80/demopadexchange/demopad/83265
+#EXTINF:-1 group-title="Canais | Telecine" tvg-logo="https://loopstatic.net/telecinetouch.png" tvg-id="TC Touch" ,Telecine Touch SD
+http://s.apkwuv.xyz:80/demopadexchange/demopad/83635
+#EXTINF:-1 group-title="Canais | Telecine" tvg-logo="https://loopstatic.net/telecinetouch.png" tvg-id="TC Touch" ,Telecine Touch FHD
+http://s.apkwuv.xyz:80/demopadexchange/demopad/83825
+#EXTINF:-1 group-title="Canais | Telecine" tvg-logo="https://loopstatic.net/telecinetouch.png" tvg-id="TC Touch" ,Telecine Touch HD
+http://s.apkwuv.xyz:80/demopadexchange/demopad/83266
+#EXTINF:-1 group-title="Canais | Telecine" tvg-logo="https://loopstatic.net/telecineaction.png" tvg-id="TC Action" ,Telecine Action FHD [Alt]
+http://s.apkwuv.xyz:80/demopadexchange/demopad/147696
+#EXTINF:-1 group-title="Canais | Telecine" tvg-logo="https://loopstatic.net/telecineaction.png" tvg-id="TC Action" ,Telecine Action HD [Alt]
+http://s.apkwuv.xyz:80/demopadexchange/demopad/147697
+#EXTINF:-1 group-title="Canais | Telecine" tvg-logo="https://loopstatic.net/telecinecult.png" tvg-id="TC Cult" ,Telecine Cult FHD [Alt]
+http://s.apkwuv.xyz:80/demopadexchange/demopad/147698
+#EXTINF:-1 group-title="Canais | Telecine" tvg-logo="https://loopstatic.net/telecinecult.png" tvg-id="TC Cult" ,Telecine Cult HD [Alt]
+http://s.apkwuv.xyz:80/demopadexchange/demopad/147699
+#EXTINF:-1 group-title="Canais | Telecine" tvg-logo="https://loopstatic.net/telecinefun.png" tvg-id="TC Fun" ,Telecine Fun FHD [Alt]
+http://s.apkwuv.xyz:80/demopadexchange/demopad/147700
+#EXTINF:-1 group-title="Canais | Telecine" tvg-logo="https://loopstatic.net/telecinefun.png" tvg-id="TC Fun" ,Telecine Fun HD [Alt]
+http://s.apkwuv.xyz:80/demopadexchange/demopad/147701
+#EXTINF:-1 group-title="Canais | Telecine" tvg-logo="https://loopstatic.net/telecinepipoca.png" tvg-id="TC Pipoca" ,Telecine Pipoca FHD [Alt]
+http://s.apkwuv.xyz:80/demopadexchange/demopad/147702
+#EXTINF:-1 group-title="Canais | Telecine" tvg-logo="https://loopstatic.net/telecinepipoca.png" tvg-id="TC Pipoca" ,Telecine Pipoca HD [Alt]
+http://s.apkwuv.xyz:80/demopadexchange/demopad/147703
+#EXTINF:-1 group-title="Canais | Telecine" tvg-logo="https://loopstatic.net/telecinepremium.png" tvg-id="TC Premium" ,Telecine Premium FHD [Alt]
+http://s.apkwuv.xyz:80/demopadexchange/demopad/147704
+#EXTINF:-1 group-title="Canais | Telecine" tvg-logo="https://loopstatic.net/telecinepremium.png" tvg-id="TC Premium" ,Telecine Premium HD [Alt]
+http://s.apkwuv.xyz:80/demopadexchange/demopad/147705
+#EXTINF:-1 group-title="Canais | Telecine" tvg-logo="https://loopstatic.net/telecinetouch.png" tvg-id="TC Touch" ,Telecine Touch FHD [Alt]
+http://s.apkwuv.xyz:80/demopadexchange/demopad/147706
+#EXTINF:-1 group-title="Canais | Telecine" tvg-logo="https://loopstatic.net/telecinetouch.png" tvg-id="TC Touch" ,Telecine Touch HD [Alt]
+http://s.apkwuv.xyz:80/demopadexchange/demopad/147707
