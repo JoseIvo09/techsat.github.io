@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <script type="text/javascript" charset="utf-8" src="https://cdn.jsdelivr.net/npm/clappr@0.0.64/dist/underscore.js"> </script>
+  <script type="text/javascript" charset="utf-8" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.js"> </script>
+  <script type="text/javascript" charset="utf-8" src="https://cdn.jsdelivr.net/npm/clappr@0.3.13/dist/clappr.plainhtml5.js"> </script>
+  <title>hls test</title>
+  <script type="text/javascript" charset="utf-8">
+window.onload = function() {
+    p = new Clappr.Player({
+      sources: ['http://s.apkwuv.xyz:80/live/demopadexchange/demopad/83598.m3u8'],
+//      sources: ['http://origin.live.hls.globoi.com/video/gnews/playlist.m3u8'],
+      poster: 'https://img2.pngdownload.id/20180712/qkz/kisspng-playboy-tv-television-playboy-logo-5b4800d0e564b9.3015388915314454569396.jpg',
+      height: 360,
+      width: 640,
+    });
+
+    p.attachTo(document.getElementById('player-wrapper'));
+}
+  </script>
+</head>
+<body>
+  <center>
+    <div id="player-wrapper"></div>
+  </center>
+</body>
+</html>
