@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Player IPTV</title>
+</head>
+<body>  
   <script type="text/javascript" charset="utf-8" src="https://cdn.jsdelivr.net/npm/clappr@0.0.64/dist/underscore-min.js"> </script>
   <script type="text/javascript" charset="utf-8" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"> </script>
   <script type="text/javascript" charset="utf-8" src="https://cdn.jsdelivr.net/npm/clappr@0.2.81/dist/clappr.plainhtml5.min.js"> </script>
-  <title>Player IPTV</title>
-  <script>
+<script>
 window.onload = function() {
     p = new Clappr.Player({
       sources: ['https://s.apkwuv.xyz:443/live/demopadexchange/demopad/83598.m3u8'],
@@ -19,10 +20,6 @@ window.onload = function() {
     p.attachTo(document.getElementById('player-wrapper'));
 }
   </script>
-</head>
-<body>
-  <center>
     <div id="player-wrapper"></div>
-  </center>
 </body>
 </html>
