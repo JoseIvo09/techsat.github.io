@@ -13,7 +13,7 @@
     <meta property="og:description"
           content="Web IPTV Player is a Online IPTV Player that allows you to stream TV channels online through the M3U URL. IPTV Web Player also has the facility to play on-demand movies, TV shows, series, and more."/>
     <meta property="og:type" content="article"/>
-    <meta property="og:url" content="http://web.iptvplayers.com/"/>
+    <meta property="og:url" content="https://web.iptvplayers.com/"/>
     <meta property="og:site_name" content="Web IPTV Player"/>
 
 
