@@ -1,25 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
 <head>
-  <title>Player IPTV</title>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.8-0.canary.10104/dist/hls.min.js"></script>
+    <style>
+        body {
+            background-color: black;
+        }
+        #video {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            margin: auto;
+            max-height: 100%;
+            max-width: 100%;
+        }
+    </style>
 </head>
-<body>  
-  <script type="text/javascript" charset="utf-8" src="https://cdn.jsdelivr.net/npm/clappr@0.0.64/dist/underscore-min.js"> </script>
-  <script type="text/javascript" charset="utf-8" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"> </script>
-  <script type="text/javascript" charset="utf-8" src="https://cdn.jsdelivr.net/npm/clappr@0.2.81/dist/clappr.plainhtml5.min.js"> </script>
+<body>
+<video id="video" controls></video>
 <script>
-window.onload = function() {
-    p = new Clappr.Player({
-      sources: ['https://s.apkwuv.xyz:443/live/demopadexchange/demopad/83598.m3u8'],
-//      sources: ['http://origin.live.hls.globoi.com/video/gnews/playlist.m3u8'],
-      poster: 'https://img2.pngdownload.id/20180712/qkz/kisspng-playboy-tv-television-playboy-logo-5b4800d0e564b9.3015388915314454569396.jpg',
-      height: 360,
-      width: 640,
-    });
+function play_stream(url) {
+    var video = document.getElementById('video');
+    var m3u8Url = decodeURIComponent(url);
 
-    p.attachTo(document.getElementById('player-wrapper'));
+    if (Hls.isSupported()) {
+        var hls = new Hls();
+        hls.loadSource(m3u8Url);
+        hls.attachMedia(video);
+        hls.on(Hls.Events.MANIFEST_PARSED, function () {
+            video.play();
+        });
+        document.title = url;
+    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+        video.src = m3u8Url;
+        video.addEventListener('loadedmetadata', function () {
+            video.play();
+        });
+        document.title = url;
+    }
 }
-  </script>
-    <div id="player-wrapper"></div>
+
+var url = 'http://dns.acaidopara.net:8080/live/P2pPT/vbhgjhur66cdm/1877.m3u8';
+play_stream(url);
+</script>
 </body>
 </html>
