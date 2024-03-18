@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta https-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Web IPTV Player - Simplest way to stream m3u8 playlist's online">
     <meta property="description"
@@ -13,7 +13,7 @@
     <meta property="og:description"
           content="Web IPTV Player is a Online IPTV Player that allows you to stream TV channels online through the M3U URL. IPTV Web Player also has the facility to play on-demand movies, TV shows, series, and more."/>
     <meta property="og:type" content="article"/>
-    <meta property="og:url" content="http://web.iptvplayers.com/"/>
+    <meta property="og:url" content="https://web.iptvplayers.com/"/>
     <meta property="og:site_name" content="Web IPTV Player"/>
 
 
