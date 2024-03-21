@@ -1,53 +1,39 @@
+<!DOCTYPE html>
 <html>
+    <head>
+        <SCRIPT LANGUAGE="JavaScript">
+            <!-- Disable
+            function disableselect(e) {
+                return false
+            }
 
-<head>
-    <script type="text/javascript" charset="utf-8" src="https://cdn.jsdelivr.net/npm/clappr@0.3.13/dist/clappr.min.js"></script>
-    <script>
-        window.clappr = window.clappr || {};
-        window.clappr.externals = [];
-
-        function addExternal() {
-            var url = document.getElementById("js-link");
-            window.clappr.externals.push(url.value);
-            addTag(url.value);
-            url.value = "";
-        }
-    </script>
-</head>
-
-<body>
-    <section class="container">
-        <div class="main">
-            <div id="output">
-                <div id="player-wrapper" class="player"></div>
-            </div>
-        </div>
-    </section>
-    <footer class="footer"></footer>
-    <script>
-        var urlParams;
-        (function() {
-            window.onpopstate = function() {
-                var match, pl = /\+/g,
-                    search = /([^&=]+)=?([^&]*)/g,
-                    decode = function(s) {
-                        return decodeURIComponent(s.replace(pl, " "));
-                    },
-                    query = window.location.search.substring(1);
-                urlParams = {};
-                while (match = search.exec(query)) urlParams[decode(match[1])] = decode(match[2]);
-            };
-            window.onpopstate();
-        })();
-        var playerElement = document.getElementById("player-wrapper");
-        var player = new Clappr.Player({
-            source: urlParams.src || "http://dns.acaidopara.net:8080/live/P2pPT/vbhgjhur66cdm/1156.m3u8",
-            height: "400",
-            width: "500",
-            autoPlay: false,
-        });
-        player.attachTo(playerElement);
-    </script>
-</body>
-
+            function reEnable() {
+                return true
+            }
+            //if IE4+
+            document.onselectstart = new Function("return false")
+            document.oncontextmenu = new Function("return false")
+            //if NS6
+            if (window.sidebar) {
+                document.onmousedown = disableselect
+                document.onclick = reEnable
+            }
+            //
+            -->
+        </script>
+        <title>Playboy TV - Ao Vivo</title>
+        <style>
+            body {
+                background-color: #000000
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align:center">
+            <span style="color:#FFFFFF">Assistir Playboy TV - Online - 24 Horas - Ao Vivo</span>
+        </h1>
+        <center>
+            <iframe src="http://player.streamingtvguides.com/?src=http%3A%2F%2Fs.apkwuv.xyz%3A8080%2Flive%2Fdemopadexchange%2Fdemopad%2F83598.m3u8&demoConfig=eyJlbmFibGVTdHJlYW1pbmciOnRydWUsImF1dG9SZWNvdmVyRXJyb3IiOnRydWUsImVuYWJsZVdvcmtlciI6dHJ1ZSwiZHVtcGZNUDQiOmZhbHNlLCJsZXZlbENhcHBpbmciOi0xLCJsaW1pdE1ldHJpY3MiOi0xLCJ3aWRldmluZUxpY2Vuc2VVcmwiOiIifQ==" scrolling="No" allowfullscreen="" style="border: medium none; width: 840;" width="500" height="1040"></iframe>
+        </center>
+    </body>
 </html>
