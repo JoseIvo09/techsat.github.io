@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Player</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			h1 {
+				font-family: Arial, sans-serif;
+				color: #2f2d2d;
+				text-align: default;
+			}
+			p {
+				font-family: Arial, sans-serif;
+				font-size: 14px;
+				text-align: default;
+				color: #2f2d2d;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Player</h1>
+<script type="text/javascript" src="https://joseivo09.github.io/techsat.github.io/jwplayer/libraries/5iYdPgsG.js"></script>
+<div id="MediaPlayerMiniPlayer">Loading...</div>
+<script type="text/javascript">
+  jwplayer("MediaPlayerMiniPlayer").setup({
+    sources: [{
+      file: 'https://cdn-3.nxplay.com.br/DISCOVERY_CHANNEL_NX/index.m3u8'
+    }],
+    rtmp: {
+      bufferlength: 120,
+    },
+    'autostart': 'true',
+    'image': '',
+    'playbackRateControls': 'false',
+    'aspectratio': '16:9',
+    'width': '100%',
+    'height': '100%',
+    'logo': {
+      'file': 'undefined',
+      'position': 'undefined',
+      'margin': 20
+    },
+    'fallback': false,
+    'androidhls': true,
+    'primary': 'html5',
+    'preload': 'metadata',
+    'mute': 'false',
+    'stretching': 'uniform',
+    'playbackRateControls': 'false',
+    'liveSyncDuration': '30'
+  });
+</script>
+		<p></p>
+	</body>
+</html>
