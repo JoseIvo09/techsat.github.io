@@ -1,0 +1,27 @@
+{
+   "background": {
+      "scripts": [ "event.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icon128.png",
+      "default_popup": "popup.html",
+      "default_title": "HLS Player - m3u8 HTTP Live Streaming (HLS) Player"
+   },
+   "content_scripts": [ {
+      "js": [ "content.js" ],
+      "matches": [ "\u003Call_urls>" ]
+   } ],
+   "content_security_policy": "script-src 'self' https://www.hlsplayer.org https://*.hlsplayer.org; object-src 'self'",
+   "description": "HLS Player - m3u8 HTTP Live Streaming (HLS) Player",
+   "homepage_url": "https://www.hlsplayer.org/",
+   "icons": {
+      "128": "icon128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuFacEwd598FnHpTYMdmhgQutIWvRS4sfc9Bb0YQAGDkBooL6uZjyXDaQO8bc3n69+8IKBg2/Js901t2BFdp6IR4ZIgSQpf9wUm64AOhLcOSQsAfpx6jF0xg5zk3WtkKVRdBbh3HA6psBmjZAA/Z2+VmmC0l89fbQV2eHu3yw2Xjulc8yNs1smw+LremIDYjd1Ii0yZh47xWvJJt+rPrcyvQd4k6sPuKO5oI4nyE771x6xZq6/+x7Ke5pbuPz82VWpa0SJE1ab5VTLy4UTqgxf0d8slRBLle5E8jmLNsOjzrTFtiFA8S8CZJ+TGmIArV6uY1TvV+LIiPBJFEBq0XpnwIDAQAB",
+   "manifest_version": 2,
+   "name": "HLS Player - m3u8 Streaming Player",
+   "permissions": [ "*://*/*.m3u8*", "http://*/*", "https://*/*", "file:///*", "webRequest", "webRequestBlocking" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.1.1",
+   "web_accessible_resources": [ "*.html", "*.js", "*.css", "*.png" ]
+}
