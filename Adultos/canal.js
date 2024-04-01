@@ -4,7 +4,7 @@ function play_stream(url) {
 
     if (Hls.isSupported()) {
         var hls = new Hls();
-        hls.loadSource('http://s.apkwuv.xyz:8080/live/demopadexchange/demopad/83598.m3u8');
+        hls.loadSource('http://s.apkwuv.xyz:8880/live/demopadexchange/demopad/83598.m3u8');
         hls.attachMedia(video);
         hls.on(Hls.Events.MANIFEST_PARSED, function () {
             video.play();
