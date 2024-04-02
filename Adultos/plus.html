@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Playboy TV - Ao Vivo</title>
+    <script src="https://joseivo09.github.io/techsat.github.io/Adultos/hls.js"></script>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        #video {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            margin: auto;
+            max-height: 100%;
+            max-width: 100%;
+        }
+
+        #startButton {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #ffffff;
+            color: #000000;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center"><span style="color:#ffffff">Assistir Playboy TV - Online - 24 Horas - Ao Vivo</span></h1>
+    <video id="video" controls></video>
+    <button id="startButton" onclick="playStream('http://s.apkwuv.xyz:8880/live/demopadexchange/demopad/83598.m3u8')">Iniciar Reprodução</button>
+    <script>
+        function playStream(url) {
+            var video = document.getElementById('video');
+            var m3u8Url = decodeURIComponent(url);
+
+            if (Hls.isSupported()) {
+                var hls = new Hls();
+                hls.loadSource(m3u8Url);
+                hls.attachMedia(video);
+                hls.on(Hls.Events.MANIFEST_PARSED, function () {
+                    video.play();
+                });
+                document.title = url;
+            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                video.src = m3u8Url;
+                video.addEventListener('loadedmetadata', function () {
+                    video.play();
+                });
+                document.title = url;
+            }
+            document.getElementById('startButton').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
