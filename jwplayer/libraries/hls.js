@@ -12591,7 +12591,7 @@
 			}, e.trigger = function(t, e) {
 				if (this.config.debug) return this.emit(t, t, e);
 				try {
-					return this.emit(t, t, e)
+					return this.emit(r, t, e)
 				} catch (e) {
 					_.error("An internal error happened while handling event " + t + '. Error message: "' + e.message + '". Here is a stacktrace:', e), this.trigger(R.ERROR, {
 						type: A.OTHER_ERROR,
