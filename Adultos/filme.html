@@ -15,14 +15,14 @@
   playButton.addEventListener('click', function() {
     if(Hls.isSupported()) {
       var hls = new Hls();
-      hls.loadSource('http://187.95.95.243:80/Star/tracks-v1a1/mono.m3u8');
+      hls.loadSource('https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01391-addigital-jovempan-klowdtv/playlist.m3u8?ManoTV');
       hls.attachMedia(video);
       hls.on(Hls.Events.MANIFEST_PARSED,function() {
         video.play();
       });
     }
     else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-      video.src = 'http://187.95.95.243:80/Star/tracks-v1a1/mono.m3u8';
+      video.src = 'https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01391-addigital-jovempan-klowdtv/playlist.m3u8?ManoTV';
       video.play();
     }
   });
