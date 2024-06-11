@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>www.hojebet.com</title>
+    <style>
+      body {
+        font-family: Verdana, sans-serif;
+        background-color: #000
+      }
+
+      .editablePart {
+        padding: 0px;
+        margin: 0px;
+        font-size: 20px;
+        color: #000;
+        border: 10px;
+        border-color: #fff; /* Cor da borda */
+        border-width: 2px; /* Tamanho da borda */
+        background-color: transparent;
+        border-radius: 0px;
+        cursor: pointer;
+        width: 50px; 
+        height: 25px; /* Diminui o tamanho dos campos editáveis */
+      }
+
+      .editablePart:hover {
+        background-color: #fff;
+      }
+
+      #loadButton {
+        background-color: transparent;
+        border: 1px;
+        color: #fff;
+        border-radius: 1px;
+        cursor: pointer;
+        padding: 1px;
+        margin: 1px;
+        font-size: 14px;
+        position: absolute; 
+        top: 19px;
+        left: 155px;
+        width: 50px; 
+        height: 12px; 
+        right: 155px;
+      }
+
+      #loadButton:hover {
+        background-color: transparent;
+      }
+
+      #horario-atual {
+        font-size: 12px;
+        color: #fff;
+        border: 3px;
+        background-color: transparent;
+        padding: 2px;
+        border-radius: 5px;
+        display: block;
+        margin-top: 5px;
+        text-align: center;
+        position: absolute; /* Posiciona o relógio abaixo à direita */
+        width: 15%; 
+        height: 3%; 
+        right: 38px;
+        top: 30px;
+        bottom: 2px;       
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke: 0.3px black;
+        font-family: 'sans-serif', Verdana, Arial Black, Gadget; /* Altera a fonte do relógio para Arial Black */
+       font-weight: ; /* Coloca o texto do relógio em negrito */
+      }
+    </style>
+  </head>
+  <body>
+    <label for="editablePart1"></label>
+    <input type="text" id="editablePart1" class="editablePart" placeholder="">
+    <label for="editablePart2"></label>
+    <input type="text" id="editablePart2" class="editablePart" placeholder="">
+    <button id="loadButton"></button>
+    <p id="horario-atual"></p>
+    <p id="editablePart3" class="editablePart" contenteditable="true" style="font-size: 13px;
+        color: #fff; 
+        background-color: transparent; 
+        padding: 0.5px;  
+        border-radius: 1px;
+        display: block;
+        margin-top: 7px;
+        text-align: center;
+        position: absolute;
+        width: 30%;
+        height: 10;
+        left: 10;
+        top: 30px;
+        bottom: 3px;       
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke: 0.3px black; font-family: 'sans-serif', Verdana, Gadget, Arial Black; font-weight: ;" contenteditable="true">Fortune Tiger </p>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadButton = document.getElementById("loadButton");
+        const myFrame = document.getElementById("myFrame");
+        loadButton.addEventListener('click', loadUrl);
+
+        function loadUrl() {
+          var part1 = document.getElementById("editablePart1").value;
+          var part2 = document.getElementById("editablePart2").value;
+          var part3 = document.getElementById("editablePart3").innerText;
+          if (part1.trim() === '' || part2.trim() === '' || part3.trim() === '') {
+            alert('Por favor, insira todas as partes editáveis.');
+            return;
+          }
+          var newUrl = "https://m.pgsoft-games.com/" + encodeURIComponent(part1) + "/index.html?bet_type=1&operator_token=1744b4161227808290cb752a80b2b299&operator_player_session=gnGGdoSD5QQGAdaVdYEHptKRb9nq3ELQidSGBf7uqiEDoSPWLHgpeyaPW6F8mMlDkqPk46XxywaG%2Bc%2FwSWJJaVDNJqdCahUG5nXPS%2FOEBvRp7791xXGl9v8zVUb3Y0K8NT9spt50P8hKQ6x203E28YGwRJT0kpKNWmF9yCfbpkGL9OnV2fESx9tHK3pnpHdD&gs_session=05C7730B-2FC1-434E-B935-A635074732C3&l=" + encodeURIComponent(part2) + "__refer=m.pg-redirect.net&or=static.pgsoft-games.com&__hv=1f8cc507&game=" + encodeURIComponent(part3);
+          myFrame.src = newUrl;
+        }
+
+        function mostrarHorarioAtual() {
+          var data = new Date();
+          var horarioAtual = data.toLocaleTimeString();
+          document.getElementById("horario-atual").innerHTML = "" + horarioAtual;
+        }
+        mostrarHorarioAtual();
+        setInterval(mostrarHorarioAtual, 1000);
+      });
+    </script>
+    <iframe name="myFrame" id="myFrame" src="about:blank" allow="encrypted-media" width="100%" height="560" scrolling="no" frameborder="no" allowfullscreen="true"></iframe>
+  </body>
+</html>
