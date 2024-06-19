@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.hojebet.com</title>
+    <style>
+      body {
+        font-family: "Exo 2", "Open Sans", sans-serif;
+        line-height: 1.4;
+        background-color: #000;
+        font-weight: bolder;
+      }
+
+      .editablePart,
+      .menuInput {
+        padding: 0px;
+        margin: 0px;
+        font-size: 20px;
+        color: #000;
+        border: 2px solid transparent;
+        /* Corrigido para borda sólida */
+        background-color: transparent;
+        border-radius: 0px;
+        cursor: pointer;
+        width: 40px;
+        /* Aumentado o tamanho para melhor usabilidade */
+        height: 25px;
+      }
+
+      .editablePart:hover,
+      .menuInput:hover {
+        background-color: transparent;
+        /* Mudança de cor ao passar o mouse */
+      }
+
+      .editablePart3,
+        padding: 0px;
+        margin: 0px;
+        font-size: 20px;
+        color: #000;
+        border: 2px solid transparent;
+        /* Corrigido para borda sólida */
+        background-color: transparent;
+        border-radius: 0px;
+        cursor: pointer;
+        width: 100px;
+        /* Aumentado o tamanho para melhor usabilidade */
+        height: 25px;
+      }
+
+      #loadButton {
+        background-color: transparent;
+        border: 0px solid #fff;
+        /* Corrigido para borda sólida */
+        color: #fff;
+        border-radius: 1px;
+        cursor: pointer;
+        padding: 5px 10px;
+        /* Ajustado para melhor visualização */
+        margin: 10px 0;
+        font-size: 14px;
+        display: inline-block;
+        margin-top: 5px;
+		letter-spacing: 0.3em;
+        text-align: center;
+        position: absolute;
+        z-index: 999;
+        /* Alinhamento corrigido */
+      }
+
+      #loadButton:hover {
+        background-color: transparent;
+        /* Mudança de cor ao passar o mouse */
+        color: #000;
+      }
+
+      #horario-atual {
+        font-family: 'mono', sans-serif, Arial Black, Gadget;
+        font-size: 12px;
+        font-weight: ;
+        color: #000;
+        background-color: transparent;
+        padding: 5px;
+        border-radius: 5px;
+        display: inline-block;
+        margin-top: 5px;
+		letter-spacing: 0.2em;
+        text-align: center;
+        position: fixed; 
+        top: 50px;
+        right: 814px;
+        z-index: 999;
+        width: 15%;
+        height: auto;
+        /* Corrigido para tamanho automático */
+        -webkit-text-fill-color: white;
+        -webkit-text-stroke: 0.6px black;
+      }
+
+      #myFrame {
+        background-color: #0000CA;        ;
+        position: fixed;
+        top: 60px;
+        right: 10;
+        left: 10;
+        width: 300px;
+        height: 560px;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="menu"></label>
+    <select id="menu" class="editablePart">
+      <option value="1368367">Alchemy Gold</option>
+      <option value="1623475">Anubis Wrath</option>
+      <option value="1340277">Asgardian Rising</option>
+      <option value="31">Baccarat Deluxe</option>
+      <option value="1418544">Bakery Bonanza</option>
+      <option value="94">Bali Vacation</option>
+      <option value="124">Battleground Royale</option>
+      <option value="69">Bikini Paradise</option>
+      <option value="108">Buffalo Win</option>
+      <option value="125">Butterfly Blossom</option>
+      <option value="71">Cai Shen Wins</option>
+      <option value="100">Candy Bonanza</option>
+      <option value="70">Candy Burst</option>
+      <option value="54">Captain's Bounty</option>
+      <option value="1682240">Cash Mania</option>
+      <option value="80">Circus Delight</option>
+      <option value="117">Cocktail Nights</option>
+      <option value="103">Crypto Gold</option>
+      <option value="1473388">Cruise Royale</option>
+      <option value="121">Destiny of Sun & Moon</option>
+      <option value="1372643">Diner Delights</option>
+      <option value="48">Double Fortune</option>
+      <option value="57">Dragon Hatch</option>
+      <option value="1451122">Dragon Hatch2</option>
+      <option value="29">Dragon Legend</option>
+      <option value="63">Dragon Tiger Luck</option>
+      <option value="79">Dreams of Macau</option>
+      <option value="73">Egypt's Book of Mystery</option>
+      <option value="44">Emperor's Favour</option>
+      <option value="114">Emoji Riches</option>
+      <option value="61">Flirting Scholar</option>
+      <option value="1555350">Forge of Wealth</option>
+      <option value="1695365">Fortune Dragon</option>
+      <option value="3">Fortune Gods</option>
+      <option value="68">Fortune Mouse</option>
+      <option value="98">Fortune Ox</option>
+      <option value="1543462">Fortune Rabbit</option>
+      <option value="126">Fortune Tiger</option>
+      <option value="1397455">Fruity Candy</option>
+      <option value="75">Ganesha Fortune</option>
+      <option value="42">Ganesha Gold</option>
+      <option value="86">Galactic Gems</option>
+      <option value="122">Garuda Gems</option>
+      <option value="2">Gem Saviour</option>
+      <option value="62">Gem Saviour Conquest</option>
+      <option value="38">Gem Saviour Sword</option>
+      <option value="1671262">Gemstones Gold</option>
+      <option value="85">Genie's 3 Wishes</option>
+      <option value="1572362">Gladiator's Glory</option>
+      <option value="91">Guardians of Ice & Fire</option>
+      <option value="1381200">Hawaiian Tiki</option>
+      <option value="105">Heist Stakes</option>
+      <option value="33">Hip Hop Panda</option>
+      <option value="1">Honey Trap of Diao Chan</option>
+      <option value="18">Hood vs Wolf</option>
+      <option value="28">Hotpot</option>
+      <option value="97">Jack Frost's Winter</option>
+      <option value="50">Journey to the Wealth</option>
+      <option value="40">Jungle Delight</option>
+      <option value="110">Jurassic Kingdom</option>
+      <option value="88">Jewels of Prosperity</option>
+      <option value="34">Legend of Hou Yi</option>
+      <option value="128">Legend of Perseus</option>
+      <option value="107">Legendary Monkey King</option>
+      <option value="60">Leprechaun Riches</option>
+      <option value="1601012">Lucky Clover Lady</option>
+      <option value="89">Lucky Neko</option>
+      <option value="130">Lucky Piggy</option>
+      <option value="1580541">Mafia Mayhem</option>
+      <option value="65">Mahjong Ways</option>
+      <option value="74">Mahjong Ways 2</option>
+      <option value="95">Majestic Treasures</option>
+      <option value="118">Mask Carnival</option>
+      <option value="7">Medusa 1">The Curse of Athena</option>
+      <option value="6">Medusa 2">The Quest of Perseus</option>
+      <option value="102">Mermaid Riches</option>
+      <option value="1402846">Midas Fortune</option>
+      <option value="35">Mr. Hallow-Win</option>
+      <option value="64">Muay Thai Champion</option>
+      <option value="1432733">Mystical Spirits</option>
+      <option value="1529867">Ninja Raccoon Frenzy</option>
+      <option value="59">Ninja vs Samurai</option>
+      <option value="112">Oriental Prosperity</option>
+      <option value="93">Opera Dynasty</option>
+      <option value="82">Phoenix Rises</option>
+      <option value="39">Piggy Gold</option>
+      <option value="1492288">Pinata Wins</option>
+      <option value="25">Plushie Frenzy</option>
+      <option value="1312883">Prosperity Fortune Tree</option>
+      <option value="36">Prosperity Lion</option>
+      <option value="84">Queen of Bounty</option>
+      <option value="113">Raider Jane's Crypt of Fortune</option>
+      <option value="1420892">Rave Party Fever</option>
+      <option value="20">Reel Love</option>
+      <option value="101">Rise of Apollo</option>
+      <option value="123">Rooster Rumble</option>
+      <option value="1594259">Safari Wilds</option>
+      <option value="37">Santa's Gift Rush</option>
+      <option value="90">Secrets of Cleopatra</option>
+      <option value="67">Shaolin Soccer</option>
+      <option value="1448762">Songkran Splash</option>
+      <option value="127">Speed Winner</option>
+      <option value="119">Spirited Wonders</option>
+      <option value="1513328">Super Golf Drive</option>
+      <option value="115">Supermarket Spree</option>
+      <option value="41">Symbols Of Egypt</option>
+      <option value="92">Thai River Wonders</option>
+      <option value="53">The Great Icescape</option>
+      <option value="120">The Queen's Banquet</option>
+      <option value="1338274">Totem Wonders</option>
+      <option value="26">Tree of Fortune</option>
+      <option value="87">Treasures of Aztec</option>
+      <option value="1655268">Tsar Treasures</option>
+      <option value="1489936">Ultimate Striker</option>
+      <option value="58">Vampire's Charm</option>
+      <option value="106">Ways of the Qilin</option>
+      <option value="1615454">Werewolf's Hunt</option>
+      <option value="1508783">Wild Ape #3258</option>
+      <option value="104">Wild Bandito</option>
+      <option value="135">Wild Bounty Showdown</option>
+      <option value="132">Wild Coaster</option>
+      <option value="83">Wild Fireworks</option>
+      <option value="1568554">Wild Heist Cashout</option>
+      <option value="24">Win Win Won</option>
+      <option value="129">Win Win Fish Prawn Crab</option>
+      <option value="24">Win Win Won</option>
+    </select>
+    <label for="editablePart2"></label>
+    <select id="editablePart2" class="editablePart">
+      <option value="pt-br">Pt-BR</option>
+      <option value="pt-pt">Português</option>
+      <option value="es">Espanhol</option>
+      <option value="en-us">Us</option>
+      <option value="id-ID">Idonesio</option>
+      <option value="fr">Frances</option>
+      <option value="en">En</option>
+      <option value="ru">Russo</option>
+      <option value="ar">Arabe</option>
+      <option value="zh-cn">Chinês Sim</option>
+      <option value="zh-tw">Chinês Trad</option>
+      <option value="de">Alemão</option>
+      <option value="it">Italiano</option>
+      <option value="ja">Japonês</option>
+      <option value="ko">Coreano</option>
+      <option value="th">Tailandês</option>	  
+      <option value="en-ca">Inglês Canadá</option>
+      <option value="en-gb">Inglês Reino Unido</option>
+      <option value="uk-ua">Ucraniano</option>
+      <option value="sv-se">Sueco</option>
+      <option value="tr-tr">Turco</option>
+      <option value="is-is">Islandês</option>
+    </select>
+    <button id="loadButton">Rum</button>
+    <p id="horario-atual"></p>
+    <p id="editablePart3" class="editablePart3" contenteditable="false" style=" 
+        font-family: 'Exo 2', 'Open Sans', sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+        color: #000; 
+        background-color: transparent; 
+        padding: 0.2px;  
+        border-radius: 1px;
+        display: block;
+        margin-top: 7px;
+        text-align: center;
+		letter-spacing: 0.1em;
+        text-align: center;
+        position: fixed;
+        z-index: 999;
+        width: 30%;
+        left: 3px;
+        top: 51px; /* Corrigido para não sobrepor outros elementos */
+        -webkit-text-fill-color: white;
+        -webkit-text-stroke: 0.6px black;"></p>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadButton = document.getElementById("loadButton");
+        const myFrame = document.getElementById("myFrame");
+        const menu = document.getElementById("menu");
+        const editablePart3 = document.getElementById("editablePart3");
+        loadButton.addEventListener('click', loadUrl);
+        // Evento para atualizar editablePart3 quando a seleção mudar
+        menu.addEventListener('change', function() {
+          editablePart3.innerText = menu.options[menu.selectedIndex].text;
+        });
+
+        function loadUrl() {
+          var part1 = menu.value;
+          var part2 = document.getElementById("editablePart2").value;
+          var part3 = editablePart3.innerText;
+          if (part1.trim() === '' || part2.trim() === '' || part3.trim() === '') {
+            alert('Por favor, insira todas as partes editáveis.');
+            return;
+          }
+          var newUrl = "https://m.pgsoft-games.com/" + encodeURIComponent(part1) + "/index.html?bet_type=1&operator_token=1744b4161227808290cb752a80b2b299&operator_player_session=gnGGdoSD5QQGAdaVdYEHptKRb9nq3ELQidSGBf7uqiH9eXXK8mdYrFYclgJNF4OokqPk46XxywaG%2Bc%2FwSWJJaVDNJqdCahUG5nXPS%2FOEBvRp7791xXGl9v8zVUb3Y0K8NT9spt50P8hKQ6x203E28YGwRJT0kpKNWmF9yCfbpkGL9OnV2fESx9tHK3pnpHdD&gs_session=05C7730B-2FC1-434E-B935-A635074732C3&l=" + encodeURIComponent(part2) + "__refer=m.pg-redirect.net&or=static.pgsoft-games.com&__hv=1fbc8c6d&game=" + encodeURIComponent(part3);
+          myFrame.src = newUrl;
+        }
+
+        function mostrarHorarioAtual() {
+          var data = new Date();
+          var horarioAtual = data.toLocaleTimeString();
+          document.getElementById("horario-atual").innerHTML = horarioAtual;
+        }
+        mostrarHorarioAtual();
+        setInterval(mostrarHorarioAtual, 1000);
+      });
+    </script>
+    <iframe name="myFrame" id="myFrame" src="about:blank" allow="encrypted-media" scrolling="yes" frameborder="no"></iframe>
+  </body>
+</html>
