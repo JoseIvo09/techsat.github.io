@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>www.hojebet.com</title>
+  <style>
+    body {
+      font-family: "Exo 2", "Open Sans", sans-serif;
+      line-height: 1.4;
+      background-color: #000;
+      font-weight: bolder;
+    }
+
+    .editablePart, .menuInput {
+      padding: 0;
+      margin: 0;
+      font-size: 20px;
+      color: #000;
+      border: 2px solid transparent;
+      background-color: transparent;
+      border-radius: 0;
+      cursor: pointer;
+      width: 200px;
+      height: 25px;
+    }
+
+    .editablePart:hover, .menuInput:hover {
+      background-color: transparent;
+    }
+
+    #loadButton {
+      background-color: transparent;
+      border: 1px solid #fff;
+      color: #fff;
+      border-radius: 1px;
+      cursor: pointer;
+      padding: 5px 10px;
+      margin: 10px 0;
+      font-size: 14px;
+      display: inline-block;
+    }
+
+    #loadButton:hover {
+      background-color: transparent;
+      color: #000;
+    }
+
+    #horario-atual {
+      font-family: 'mono', sans-serif, Arial Black, Gadget;
+      font-size: 12px;
+      color: #000;
+      background-color: transparent;
+      padding: 5px;
+      border-radius: 5px;
+      display: block;
+      margin-top: 5px;
+      text-align: center;
+      position: absolute;
+      width: 15%;
+      height: auto;
+      right: 38px;
+      top: 75px;
+      -webkit-text-fill-color: white;
+      -webkit-text-stroke: 0.6px black;
+    }
+  </style>
+</head>
+<body>
+  <label for="menu"></label>
+  <select id="menu" class="editablePart">
+    <option value="vs15diamond">Diamond Strike</option>
+    <option value="vs20olympgate">Gates of Olympus</option>
+    <option value="vs9aztecgemsdx">Aztec Gems Deluxe</option>
+    <option value="vs20gg">Spooky Fortune</option>
+    <option value="vs25mustang">Mustang Gold</option>
+    <option value="vsprg20sugargod">Gods of Oblivion</option>
+    <option value="vs25eldorado_cv39">El Dorado The City of Gold</option>
+    <option value="vswaysdorado">El Dorado The City of Gold Megaways</option>
+    <option value="vs20cm">Sugar Rush 2015</option>
+    <option value="vs20cms">Sugar Rush Summer Time</option>
+    <option value="vs20cmv">Sugar Rush Valentine's Day</option>
+    <option value="vs20cw">Sugar Rush Winter</option>
+  </select>
+  <button id="loadButton">Rum</button>
+
+  <p id="horario-atual"></p>
+
+  <p id="editablePart3" class="editablePart" contenteditable="false" style="
+    font-family: 'Exo 2', 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #000;
+    background-color: transparent;
+    padding: 0.2px;
+    border-radius: 1px;
+    display: block;
+    margin-top: 7px;
+    text-align: center;
+    position: absolute;
+    width: 30%;
+    left: 10px;
+    top: 75px;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 0.6px black;">
+  </p>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const loadButton = document.getElementById("loadButton");
+      const myFrame = document.getElementById("myFrame");
+      const menu = document.getElementById("menu");
+      const editablePart3 = document.getElementById("editablePart3");
+
+      loadButton.addEventListener('click', loadUrl);
+
+      menu.addEventListener('change', function() {
+        editablePart3.innerText = menu.options[menu.selectedIndex].text;
+      });
+
+      function loadUrl() {
+        const part1 = menu.value;
+        const part3 = editablePart3.innerText;
+
+        if (part1.trim() === '' || part3.trim() === '') {
+          alert('Por favor, insira todas as partes editáveis.');
+          return;
+        }
+
+        const newUrl = `https://d3pvfi6m7bxu71.cloudfront.net/gs2c/openGame.do?jurisdiction=99&lang=PT&cur=BRL&gameSymbol=${encodeURIComponent(part1)}&game=${encodeURIComponent(part3)}`;
+        myFrame.src = newUrl;
+      }
+
+      function mostrarHorarioAtual() {
+        const data = new Date();
+        const horarioAtual = data.toLocaleTimeString();
+        document.getElementById("horario-atual").innerHTML = horarioAtual;
+      }
+
+      mostrarHorarioAtual();
+      setInterval(mostrarHorarioAtual, 1000);
+    });
+  </script>
+
+  <iframe name="myFrame" id="myFrame" src="about:blank" allow="encrypted-media" width="100%" height="560" scrolling="yes" frameborder="no" ></iframe>
+</body>
+    </html>
+  
