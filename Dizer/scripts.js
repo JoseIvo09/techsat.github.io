@@ -17,5 +17,5 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("clock").innerHTML = time;
   }
 
-  setInterval(updateClock, 999);
+  setInterval(updateClock, 1000);
 });
