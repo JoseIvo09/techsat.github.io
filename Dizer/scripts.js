@@ -3,18 +3,25 @@ document.addEventListener('DOMContentLoaded', function() {
   const loadButton = document.getElementById("loadButton");
   const myFrame = document.getElementById("myFrame");
 
-  loadButton.addEventListener('click', function() {
-    myFrame.src = urlInput.value;
-  });
+  if (loadButton) {
+    loadButton.addEventListener('click', function() {
+      if (myFrame && urlInput) {
+        myFrame.src = urlInput.value;
+      }
+    });
+  }
 
   function updateClock() {
     const now = new Date();
-    const time = now.toLocaleTimeString(, { 
-        hour: '2-digit', 
-        minute: '2-digit', 
-        second: '2-digit' 
+    const time = now.toLocaleTimeString('en-US', { 
+      hour: '2-digit', 
+      minute: '2-digit', 
+      second: '2-digit' 
     });
-    document.getElementById("clock").innerHTML = time;
+    const clock = document.getElementById("clock");
+    if (clock) {
+      clock.innerHTML = time;
+    }
   }
 
   setInterval(updateClock, 1000);
